@@ -7,7 +7,7 @@ const debounce = (func, delay) => {
 
   return function () {
     if (timeout) {
-      clearInterval(timeout);
+      clearTimeout(timeout);
     }
 
     timeout = setTimeout(() => {
